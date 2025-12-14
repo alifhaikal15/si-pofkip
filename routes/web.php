@@ -27,3 +27,7 @@ Route::get('/kegiatan', function () {
     return view('kegiatan');
 })->name('kegiatan');
 
+Route::get('/presensi', function () {
+    return view('presensi');
+})->name('presensi');
+
