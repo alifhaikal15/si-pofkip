@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\PengurusController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Kegiatan;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/dashboard', function () {
@@ -29,3 +31,4 @@ Route::get('/presensi', function () {
 })->name('presensi');
 
 Route::resource('pengurus', PengurusController::class);
+Route::resource('kegiatan', KegiatanController::class);

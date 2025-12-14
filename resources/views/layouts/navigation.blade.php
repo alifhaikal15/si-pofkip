@@ -19,7 +19,7 @@
                     <x-nav-link :href="route('pengurus.index')" :active="request()->routeIs('pengurus')">
                         {{ __('Data Pengurus') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('kegiatan')" :active="request()->routeIs('kegiatan')">
+                    <x-nav-link :href="route('kegiatan.index')" :active="request()->routeIs('kegiatan')">
                         {{ __('Kegiatan Anggota') }}
                     </x-nav-link>
                     <x-nav-link :href="route('presensi')" :active="request()->routeIs('presensi')">
