@@ -5,9 +5,9 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a class="flex flex-row align-middle items-center gap-4" href="{{ route('dashboard') }}">
                         <img class="w-8 h-10" src="{{ asset("img/Logo.png") }}" alt="">
-                        <!-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800" /> -->
+                        <h1 class="text-xl font-bold text-orange-500">UKM-POFKIP</h1>
                     </a>
                 </div>
 
