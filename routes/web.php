@@ -19,3 +19,11 @@ Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/pengurus', function () {
+    return view('pengurus');
+})->name('pengurus');
+
+Route::get('/kegiatan', function () {
+    return view('kegiatan');
+})->name('kegiatan');
+
