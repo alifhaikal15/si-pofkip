@@ -16,13 +16,13 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('pengurus.index')" :active="request()->routeIs('pengurus')">
+                    <x-nav-link :href="route('pengurus.index')" :active="request()->routeIs('pengurus.index')">
                         {{ __('Data Pengurus') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('kegiatan.index')" :active="request()->routeIs('kegiatan')">
+                    <x-nav-link :href="route('kegiatan.index')" :active="request()->routeIs('kegiatan.index')">
                         {{ __('Kegiatan Anggota') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('presensi')" :active="request()->routeIs('presensi')">
+                    <x-nav-link :href="route('presensi')" :active="request()->routeIs('presensi.index')">
                         {{ __('Presensi') }}
                     </x-nav-link>
                 </div>
