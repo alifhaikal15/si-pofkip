@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PengurusController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,10 +20,6 @@ Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/pengurus', function () {
-    return view('pengurus');
-})->name('pengurus');
-
 Route::get('/kegiatan', function () {
     return view('kegiatan');
 })->name('kegiatan');
@@ -31,3 +28,4 @@ Route::get('/presensi', function () {
     return view('presensi');
 })->name('presensi');
 
+Route::resource('pengurus', PengurusController::class);
