@@ -22,7 +22,7 @@
                     <x-nav-link :href="route('kegiatan.index')" :active="request()->routeIs('kegiatan.index')">
                         {{ __('Kegiatan Anggota') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('presensi')" :active="request()->routeIs('presensi.index')">
+                    <x-nav-link :href="route('presensi.index')" :active="request()->routeIs('presensi*')">
                         {{ __('Presensi') }}
                     </x-nav-link>
                 </div>

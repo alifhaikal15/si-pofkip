@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\PengurusController;
 use App\Http\Controllers\ProfileController;
@@ -22,13 +23,18 @@ Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/kegiatan', function () {
-    return view('kegiatan');
-})->name('kegiatan');
+Route::resource('pengurus', PengurusController::class)
+    ->parameters(['pengurus' => 'pengurus']) // <--- TAMBAHKAN BARIS INI
+    ->middleware(['auth', 'verified']);
+// Route::get('/kegiatan', function () {
+//     return view('kegiatan');
+// })->name('kegiatan');
 
-Route::get('/presensi', function () {
-    return view('presensi');
-})->name('presensi');
+// Route::get('/presensi', function () {
+//     return view('presensi');
+// })->name('presensi');
+
 
 Route::resource('pengurus', PengurusController::class);
 Route::resource('kegiatan', KegiatanController::class);
+Route::resource('presensi', PresensiController::class);
